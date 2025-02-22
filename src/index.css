@@ -1,0 +1,152 @@
+body{
+
+  margin: 0;
+  
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+span{
+  font-size: 1.8rem;
+}
+
+
+#loc-span{
+  font-size: 2rem;
+}
+
+#temp-span{
+
+  font-size: 8rem;
+  font-weight: bold;
+}
+
+.app{
+
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: rgb(255, 255, 255);
+}
+
+.app::before{
+  content: '';
+  
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container{
+display: flex;
+flex-direction: column;
+padding: 2rem  8rem ;
+height: 90%;
+justify-content: space-between;
+align-items: center;
+}
+
+.search{
+  margin-bottom: 3rem;
+ 
+}
+
+.search input{
+  padding: 0.4rem 0.7rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 2px solid white;
+  background-color: rgba(61, 61, 61, 0.288);
+  color: rgb(247, 246, 246);
+}
+
+::placeholder{
+  color: rgb(255, 255, 255);
+}
+
+
+.top{
+  width: 50%;
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.464);
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.decription{
+ 
+  font-weight: bold;
+}
+
+.bottom{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.486);
+  backdrop-filter: blur(20px);
+
+  white-space: nowrap;
+}
+
+.feels{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+
+
+.humidity{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.wind{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.error-msg{
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 768px){
+ 
+  .top{
+    width: 100%;
+  }
+
+
+  #temp-span{
+    font-size: 6rem;
+  } 
+.bottom{
+  margin: 0;
+  width: 150%;
+}
+.feels ,.humidity,.wind{
+  margin: 0 5%;
+ 
+}
+  .feels span,.humidity span,.wind span{
+    font-size: 1rem;
+    
+
+  }
+}
