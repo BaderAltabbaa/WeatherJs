@@ -13,6 +13,9 @@ span{
 #loc-span{
   font-size: 2rem;
 }
+.loaction{
+  margin-top: 1rem;
+}
 
 #temp-span{
 
@@ -27,11 +30,11 @@ span{
   position: relative;
   background-color: rgba(0, 0, 0, 0.4);
   color: rgb(255, 255, 255);
+  overflow: hidden;
 }
 
 .app::before{
   content: '';
-  
   position: absolute;
   width: 100%;
   height: 100%;
@@ -43,16 +46,13 @@ span{
 .container{
 display: flex;
 flex-direction: column;
-padding: 2rem  8rem ;
+padding: 1rem  4rem ;
 height: 90%;
 justify-content: space-between;
 align-items: center;
 }
 
-.search{
-  margin-bottom: 3rem;
- 
-}
+
 
 .search input{
   padding: 0.4rem 0.7rem;
@@ -69,7 +69,7 @@ align-items: center;
 
 
 .top{
-  width: 50%;
+  width: 100%;
   padding: 2rem;
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.464);
@@ -96,7 +96,6 @@ align-items: center;
   border-radius: 12px;
   background-color: rgba(0, 0, 0, 0.486);
   backdrop-filter: blur(20px);
-
   white-space: nowrap;
 }
 
@@ -128,22 +127,16 @@ align-items: center;
 
 @media (max-width: 768px){
  
-  .top{
-    width: 100%;
-  }
-
+ 
 
   #temp-span{
     font-size: 6rem;
   } 
 .bottom{
   margin: 0;
-  width: 150%;
+  width: 100%;
 }
-.feels ,.humidity,.wind{
-  margin: 0 5%;
- 
-}
+
   .feels span,.humidity span,.wind span{
     font-size: 1rem;
     
